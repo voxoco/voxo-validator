@@ -71,10 +71,10 @@ const schema = {
   address: 'strip_tags'
 }
 
-const data = validator.sanitze(data, schema);
+validator.sanitze(data, schema);
 ```
 
-The output will be:
+The `unsafe` object will now contain:
 
 ```plain
 {
