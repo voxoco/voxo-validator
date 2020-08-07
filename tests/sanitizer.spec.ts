@@ -100,6 +100,20 @@ describe('sanitizer', () => {
     });
   });
 
+  it('can trim extra characters', () => {
+    const data: any = { name: 'Wes Anderson   ' };
+
+    const schema = {
+      name: 'trim',
+    };
+
+    validator.sanitize(data, schema);
+
+    expect(data).toMatchObject({
+      name: 'Wes Anderson',
+    });
+  });
+
   it('can transform strings to uppercase', () => {
     const data: any = { name: 'voxo_api' };
 

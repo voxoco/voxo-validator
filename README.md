@@ -85,4 +85,17 @@ The `unsafe` object will now contain:
 
 ## Schemas
 
-This list is a work in progress.
+- `.rules.dids.CREATE`
+- `.rules.dids.UPDATE`
+- `.rules.e911.CREATE`
+- `.rules.e911.UPDATE`
+- `.rules.passwordReset.UPDATE`
+- `.rules.porting.CREATE`
+- `.rules.porting.UPDATE`
+- `.rules.tenants.CREATE`
+- `.rules.tenants.UPDATE`
+- `.rules.tnOrdering.COVERAGE`
+- `.rules.tnOrdering.INVENTORY`
+- `.rules.tnOrdering.NUMBER_DETAIL`
+- `.rules.users.ANY`
+- `.rules.users.UPDATE`

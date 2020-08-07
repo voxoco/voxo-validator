@@ -1,0 +1,32 @@
+export const CREATE = {
+  'accountNumber': 'required|string',
+  'accountPin': 'required|string',
+  'authorizedPerson': 'required|string',
+  'city': 'required|string',
+  'companyName': 'required|string',
+  'location': 'string',
+  'numberArray': 'required|array|min:1',
+  'portDate': 'required|string',
+  'postalCode': 'required|string',
+  'state': 'required|string|max:2|min:2',
+  'streetInfo': 'required|string',
+  'streetNum': 'required|string',
+  'tenantId': 'required|number',
+};
+
+export const UPDATE = {
+  'accountNum': 'required|string',
+  'accountPin': 'required|string',
+  'atn': 'required|string',
+  'authDate': 'required|string',
+  'authName': 'required|string',
+  'city': 'required|string',
+  'locationType1': 'string',
+  'locationValue1': 'string',
+  'name': 'string',
+  'postalCode': 'required|string',
+  'state': 'required|string|max:2|min:2',
+  'streetName': 'required|string',
+  'streetNum': 'required|string',
+  'trunkGroup': 'required|string',
+};
