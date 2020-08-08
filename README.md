@@ -40,16 +40,20 @@ class Auth {
       password: 'required|string|min:8',
     };
 
-    if (validator.validate(request.all(), validator.rules.auth.REGISTER)) {
-      const password = bcrypt(request.password);
+    validator.validate(request.all(), validator.rules.auth.REGISTER))
+      .then(() => {
+        const password = bcrypt(request.password);
 
-      const user = new User({
-        email: request.get('email').
-        password,
+        const user = new User({
+          email: request.get('email').
+          password,
+        });
+
+        return response.json(user);
+      })
+      .catch((errors) => {
+        console.error(errors);
       });
-
-      return response.json(user);
-    }
   }
 }
 ```

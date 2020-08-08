@@ -9,8 +9,7 @@ describe('validator', () => {
     };
 
     validator.validate(data, schema)
-      .then(() => { expect(true).toBeTruthy(); })
-      .catch((error) => { fail() });
+      .then(() => { expect(true).toBeTruthy(); });
   });
 
   it('can fail', () => {
@@ -21,7 +20,6 @@ describe('validator', () => {
     };
 
     validator.validate(data, schema)
-      .then(() => { fail() })
       .catch((error) => { expect(error).toBeDefined() });
   });
 });
