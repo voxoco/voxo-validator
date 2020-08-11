@@ -1,6 +1,6 @@
 {
-  "name": "validator",
-  "version": "1.0.0",
+  "name": "@voxoco/validator",
+  "version": "1.0.0-alpha.1",
   "description": "Asynchronous validator for full-stack VOXO apps",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,9 @@
     "url": "https://github.com/voxoco/voxo-validator/issues"
   },
   "homepage": "https://github.com/voxoco/voxo-validator#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "indicative": "^7.4.4",
     "jest": "^26.2.2"
