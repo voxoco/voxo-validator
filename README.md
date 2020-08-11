@@ -6,10 +6,10 @@ You can install this package using either npm or Yarn.
 
 ```bash
 # npm
-npm install voxo-validator
+npm install @voxoco/validator
 
 # Yarn
-yarn add voxo-validator
+yarn add @voxoco/validator
 ```
 
 ## Usage
